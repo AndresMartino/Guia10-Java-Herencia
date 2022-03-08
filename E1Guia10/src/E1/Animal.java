@@ -58,9 +58,13 @@ public abstract class Animal{
     }
 
     
-   public abstract void alimentarse(){
-      
+    public void alimentarse(){
+       System.out.println("nada");
     }
+
+   
+    
+    
 }
 /*Tenemos una clase padre Animal junto con sus 3 clases hijas Perro, Gato, Caballo.
 La clase Animal tendrá como atributos el nombre, alimento, edad y raza del
