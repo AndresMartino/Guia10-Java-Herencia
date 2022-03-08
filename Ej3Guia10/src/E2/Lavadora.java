@@ -32,8 +32,9 @@ public class Lavadora extends Electrodomestico {
     /*Método crearLavadora (): este método llama a crearElectrodomestico() de la
 clase padre, lo utilizamos para llenar los atributos heredados del padre y
 después llenamos el atributo propio de la lavadora.*/
-    public void crearLavadora() {
-        crearElectrodomestico();
+    @Override
+    public void crearElectrodomestico() {
+       super.crearElectrodomestico();
         System.out.println("Ingrese carga de la lavadora");
         this.carga = read.nextInt();
         precioFinal();
@@ -44,7 +45,7 @@ después llenamos el atributo propio de la lavadora.*/
     public void precioFinal() {
         super.precioFinal();
         if (this.carga > 30) {
-            this.precio += 1000;
+            this.precio += 500;
         }
         System.out.println("precio= "+this.precio);
     }

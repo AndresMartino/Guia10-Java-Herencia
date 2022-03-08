@@ -15,14 +15,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Lavadora lavadora = new Lavadora();
+        Electrodomestico lavadora = new Lavadora();
         System.out.println("Lavadora");
-        lavadora.crearLavadora();
+        lavadora.crearElectrodomestico();
         System.out.println(lavadora);
-        
-        Televisor televisor=new Televisor();
+       Electrodomestico televisor=new Televisor();
         System.out.println("Televisor");
-        televisor.crearTelevisor();
+        televisor.crearElectrodomestico();
         System.out.println(televisor);
     }
 

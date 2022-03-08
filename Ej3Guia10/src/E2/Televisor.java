@@ -40,8 +40,9 @@ public class Televisor extends Electrodomestico {
         this.tdt = tdt;
     }
 
-    public void crearTelevisor() {
-        crearElectrodomestico();
+    @Override
+    public void crearElectrodomestico() {
+        super.crearElectrodomestico();
         System.out.println("Ingrese resolucion del televisor en pulgadas");
         this.resolucion = read.nextInt();
         System.out.println("Inggrese <true> o <false> si posee tdt");
@@ -53,19 +54,18 @@ public class Televisor extends Electrodomestico {
     @Override
     public void precioFinal() {
         super.precioFinal();
-        if (this.resolucion>40) {
-            this.precio=this.precio*1.3;
+        if (this.resolucion > 40) {
+            this.precio = this.precio * 1.3;
         }
         if (tdt) {
-            this.precio+=500;
+            this.precio += 500;
         }
-        System.out.println("precio= "+this.precio);
+        System.out.println("precio= " + this.precio);
     }
 
     @Override
     public String toString() {
-        return "Televisor{" +"precio= "+this.precio + '}';
+        return "Televisor{" + "precio= " + this.precio + '}';
     }
-   
-    
+
 }

@@ -9,8 +9,11 @@ package Ej4;
  *
  * @author Andrelo
  */
-public interface calculoFormas {
-    public final double PI=3.1415;
-    public void area();
-    public void perimetro();
+public interface CalculoFormas {
+
+    final double PI = 3.1415;
+
+    void area();
+
+    void perimetro();
 }

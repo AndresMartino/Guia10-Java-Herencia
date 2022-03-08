@@ -34,12 +34,12 @@ public class Main {
             switch (opc) {
                 case 1:
                     Lavadora lavadora = new Lavadora();
-                    lavadora.crearLavadora();
+                    lavadora.crearElectrodomestico();
                     electrodomestico.add(lavadora);
                     break;
                 case 2:
                     Televisor televisor = new Televisor();
-                    televisor.crearTelevisor();
+                    televisor.crearElectrodomestico();
                     electrodomestico.add(televisor);
                     break;
                 case 3:

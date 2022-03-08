@@ -39,9 +39,9 @@ public class Televisor extends Electrodomestico {
     public void setTdt(boolean tdt) {
         this.tdt = tdt;
     }
-
-    public void crearTelevisor() {
-        crearElectrodomestico();
+@Override
+    public void crearElectrodomestico() {
+        super.crearElectrodomestico();
         System.out.println("Ingrese resolucion del televisor en pulgadas");
         this.resolucion = read.nextInt();
         System.out.println("Inggrese <true> o <false> si posee tdt");

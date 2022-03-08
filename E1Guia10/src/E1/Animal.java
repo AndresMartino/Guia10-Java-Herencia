@@ -9,7 +9,7 @@ package E1;
  *
  * @author Andrelo
  */
-public class Animal extends Object{
+public abstract class Animal{
     protected String nombre;
     protected String alimento;
     protected int edad;
@@ -58,9 +58,8 @@ public class Animal extends Object{
     }
 
     
-    public void alimentarse(){
-        System.out.println(nombre+ " Come "+alimento);
-    
+   public abstract void alimentarse(){
+      
     }
 }
 /*Tenemos una clase padre Animal junto con sus 3 clases hijas Perro, Gato, Caballo.

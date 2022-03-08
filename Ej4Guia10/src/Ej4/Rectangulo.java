@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Andrelo
  */
-public class Rectangulo implements calculoFormas{
+public class Rectangulo implements CalculoFormas{
     Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
     private double altura;
     private double base;
