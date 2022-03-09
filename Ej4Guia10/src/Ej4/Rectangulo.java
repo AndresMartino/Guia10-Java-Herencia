@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author Andrelo
  */
 public class Rectangulo implements CalculoFormas{
-    Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
+    
     private double altura;
     private double base;
 
@@ -44,6 +44,7 @@ public class Rectangulo implements CalculoFormas{
     }
     
     public void datosRectangulo(){
+        Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         System.out.println("Ingrese base de rectangulo");
         this.base=read.nextDouble();
         System.out.println("Ingrese altura de rectangulo");

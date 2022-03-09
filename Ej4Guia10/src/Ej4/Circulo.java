@@ -14,7 +14,6 @@ import java.util.Scanner;
  */
 public class Circulo implements CalculoFormas {
 
-    Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
     private double radio;
 
     public Circulo() {
@@ -22,14 +21,6 @@ public class Circulo implements CalculoFormas {
 
     public Circulo(double radio) {
         this.radio = radio;
-    }
-
-    public Scanner getRead() {
-        return read;
-    }
-
-    public void setRead(Scanner read) {
-        this.read = read;
     }
 
     public double getRadio() {
@@ -41,6 +32,7 @@ public class Circulo implements CalculoFormas {
     }
 
     public void datosCirculo() {
+        Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         System.out.println("Ingrese Radio del circulo");
         this.radio = read.nextInt();
         area();
@@ -51,7 +43,7 @@ public class Circulo implements CalculoFormas {
     @Override
     public void area() {
         System.out.printf("El area del circulo es %.2f \n", PI * Math.pow(radio, 2));
-     
+
     }
 
     @Override

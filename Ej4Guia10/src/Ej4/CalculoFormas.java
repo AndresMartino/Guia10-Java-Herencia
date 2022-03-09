@@ -11,7 +11,7 @@ package Ej4;
  */
 public interface CalculoFormas {
 
-    final double PI = 3.1415;
+    double PI = 3.1415;
 
     void area();
 
