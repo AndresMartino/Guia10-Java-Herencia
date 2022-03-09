@@ -12,8 +12,8 @@ import java.util.Scanner;
  *
  * @author Andrelo
  */
-public class Rectangulo implements CalculoFormas{
-    
+public class Rectangulo implements CalculoFormas {
+
     private double altura;
     private double base;
 
@@ -24,8 +24,6 @@ public class Rectangulo implements CalculoFormas{
         this.altura = altura;
         this.base = base;
     }
-
-    
 
     public double getAltura() {
         return altura;
@@ -42,27 +40,25 @@ public class Rectangulo implements CalculoFormas{
     public void setBase(double base) {
         this.base = base;
     }
-    
-    public void datosRectangulo(){
+
+    public void datosRectangulo() {
         Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         System.out.println("Ingrese base de rectangulo");
-        this.base=read.nextDouble();
+        this.base = read.nextDouble();
         System.out.println("Ingrese altura de rectangulo");
-        this.altura=read.nextDouble();
+        this.altura = read.nextDouble();
         area();
         perimetro();
     }
-    
-    
+
     @Override
     public void area() {
-        System.out.printf("El area del rectangulo es %.2f \n",this.altura*this.base);
+        System.out.printf("El area del rectangulo es %.2f \n", this.altura * this.base);
     }
 
     @Override
     public void perimetro() {
-        System.out.printf("El perimetro del rectangulo es: %.2f \n",(this.altura+this.base)*2);
+        System.out.printf("El perimetro del rectangulo es: %.2f \n", (this.altura + this.base) * 2);
     }
-    
-    
+
 }
